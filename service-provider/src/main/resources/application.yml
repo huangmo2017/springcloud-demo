@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: service-provider # 应用名称，注册到eureka后的服务名称
+  servlet:
+    multipart:
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+eureka:
+  client:
+    service-url: # EurekaServer地址
+      defaultZone: http://127.0.0.1:10086/eureka
